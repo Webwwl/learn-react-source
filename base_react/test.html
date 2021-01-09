@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shareDemo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .item {
+      height: 140px;
+      padding: 20px;
+      /* position: relative; */
+    }
+    .moveItem {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    .absolute_move {
+      position: absolute;
+    }
+    .animation_move {
+      animation: move 4s ease-in infinite alternate;
+    }
+    @keyframes move {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(500px);
+      }
+    }
+    .opacity_change {
+      opacity: .5;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+  </div>
+</body>
+</html>
